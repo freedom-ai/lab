@@ -1,0 +1,60 @@
+@charset "utf-8";
+/*初始化样式*/
+body,h1,h2,h3,h4,h5,h6,p,dl,dt,dd,ul,ol,li,
+form,button, input, textarea, tr, td { margin:0;  padding:0; font-family:"微软雅黑","黑体";}
+html,
+body{
+	height:100%;
+	font-size:15px;
+}
+input,
+textarea{
+	background:none;
+	border:none;
+	outline:none;
+	font-size:13px;
+}
+ul, ol { list-style:none;  }
+a { text-decoration:none;  }
+a:hover { text-decoration:none; }
+
+table { border-collapse:collapse; border-spacing:0;  }
+a, div, input, ul, span, label,
+p, button, li, form, textarea, h1, h2, h3, h4, h5{
+	box-sizing:border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+body {
+	background: url('../imgs/direct-bg.png')no-repeat center #313338;
+	background-size: cover;
+	overflow:hidden
+}
+img{
+	border:none;
+	vertical-align: middle;
+}
+
+
+
+/*基础的公共样式*/
+
+#container{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.content{
+	width: 100%;
+	height: 100%;
+	border: 5px solid red;
+}
+.logo{
+	width: 180px;
+	height: 65px;
+
+}
+.logo img {
+	width: 100%;
+	height: 100%;
+}

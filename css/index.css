@@ -1,0 +1,217 @@
+/*首页样式*/
+@charset "utf-8";
+
+/*头部开始*/
+.top-bar{
+    width:100%;
+    height:80px;
+
+}
+.login-btn{
+    top: 30px;
+    left: 300px;
+    position: absolute;
+    z-index: 11;
+}
+.login-btn a{
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: #ffffff;
+    background: #6d7a9a;
+    text-align: center;
+    display: inline-block;
+    border-bottom: 3px solid #49587d;
+}
+
+.login-btn a:hover{
+    background:#586991;
+    cursor: pointer;
+}
+/*头部结束*/
+
+
+/*标题内容部分*/
+.main-content{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    padding-top:80px;
+}
+.item {
+    width:180px;
+    height:180px;
+    background:url('../imgs/enter-bg.png') no-repeat top left;
+    position:absolute;
+    font-size:22px;
+}
+.item a{
+    width:180px;
+    height:180px;
+    border-radius: 90px;
+    display:block;
+    color: #ffffff;
+    position:absolute;
+    top:0;
+    left:0;
+    text-align:center;
+    line-height:180px;
+    z-index: 10;
+}
+
+.item .hover{
+    width:250px;
+    height:250px;
+    background:url('../imgs/enter-hover.png')no-repeat center;
+    position:absolute;
+    top:-17px;
+    left:-46px;
+    display:none;
+}
+.item:hover .hover{
+    display:block;
+}
+.item.cs{
+    left:10%;
+    top:10%;
+}
+.item.as{
+    left:20%;
+    top:15%;
+}
+.item.ac{
+    left:30%;
+    top:30%;
+}
+.item.lab{
+    left:80%;
+    top:10%;
+}
+.item.tp{
+    left:45%;
+    bottom:40%
+}
+.item.pa{
+    left:25%;
+    bottom:20%
+}
+.item.cm{
+    left:65%;
+    bottom:30%
+}
+.item.cf{
+    left:75%;
+    bottom:10%
+}
+/*弹出提示框*/
+#reminder {
+    width: 260px;
+    height: 146px;
+    min-width: 260px;
+    position: fixed;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    margin-left: -130px;
+    margin-top: -73px;
+    background-color: #ffffff;
+    display: none;
+}
+.rem-bar{
+    padding: 0 0 0 20px;
+    height: 42px;
+    line-height: 42px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #333;
+    overflow: hidden;
+    background-color: #F8F8F8;
+    border-radius: 2px 2px 0 0;
+}
+.rem-bar span {
+    width: 20px;
+    text-align: center;
+    float: right;
+    margin-right: 10px;
+    z-index: 101;
+    cursor: pointer;
+}
+.rem-cont{
+    position: relative;
+    padding: 20px;
+    line-height: 24px;
+    overflow: hidden;
+    font-size: 14px;
+
+}
+.rem-btn a{
+    float: right;
+    height: 28px;
+    line-height: 28px;
+    margin: 0 6px;
+    padding: 0 15px;
+    border: 1px solid #dedede;
+    background-color: #f1f1f1;
+    color: #333;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+
+@media screen  and (min-width: 1280px) and (max-width: 1440px){
+    .item{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+    }
+}
+@media screen  and (min-width: 768px) and (max-width: 960px){
+    .item{
+        transform: scale(.8);
+        -webkit-transform: scale(.8);
+        -moz-transform: scale(.8);
+    }
+}
+@media screen  and (min-width: 480px) and (max-width: 760px){
+    .item{
+        transform: scale(.6);
+        -webkit-transform: scale(.6);
+        -moz-transform: scale(.6);
+    }
+}
+@media screen  and (min-width: 320px) and (max-width: 480px){
+    .item{
+        transform: scale(.3);
+        -webkit-transform: scale(.3);
+        -moz-transform: scale(.3);
+    }
+    .login-btn {
+        top: 0;
+        left: 150px;
+        transform: scale(.5);
+    }
+}
+@media screen and(max-height: 800px){
+    .item{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+    }
+}
+@media screen  and (max-height: 600px){
+    .item{
+        transform: scale(.6);
+        -webkit-transform: scale(.6);
+        -moz-transform: scale(.6);
+    }
+}
+@media screen  and (max-height: 480px){
+    .item{
+        transform: scale(.4);
+        -webkit-transform: scale(.4);
+        -moz-transform: scale(.4);
+    }
+}
+
+
